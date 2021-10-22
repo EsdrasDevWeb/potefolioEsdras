@@ -1,0 +1,752 @@
+body
+{
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+nav
+{
+	font-family: Calibri,Serif;
+	display: flex;
+	width: 100%;
+	height: 80px;
+	background-color: #424;
+}
+
+.titre
+{
+	width: 200px;
+	margin-top: 20px;
+	height: none;
+	color: #ffffff;
+	margin-top: -20px;
+	margin-left: 30px;
+	font-size: 30px;
+}
+
+
+h3
+{
+	width: 200px;
+	color: #fff;
+	font-family: Arial Black, Serif;
+	font-size:20 px;
+	margin: 25px auto;
+}
+
+
+.sous-menu
+{
+	display: none;
+}
+
+.menu:hover .sous-menu 
+{
+	display: inline-block;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+
+	
+
+}
+.sous-menu li
+{
+	border-bottom: 1px solid #fff;
+
+}
+.sous-menu li:hover
+{
+	background-color:#424; 
+	border:2px solid #424;
+
+}
+.sous-menu li a
+{
+	padding: 0px;
+	font-size: 20px;
+	color: #fff; 
+	text-decoration: unset;
+}
+
+.menu:hover
+{
+	height: 360px;
+	background-color: #000000;
+
+}
+
+
+
+
+.position-menu
+{
+	width: 350px;
+	text-align: center;
+	margin-left:auto;
+	margin-top: -15px;
+
+}
+
+.img-fond
+{
+	
+	background-image:url('hero-area.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+}
+.fond-trans
+{
+	width: 100%;
+	height: 900px;
+	background-color:rgba(0,0,0,0.5);
+	background-attachment: fixed;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.block-principal
+{
+	width: 100%;
+	height: 100%;
+}
+.presentation
+{
+	width: auto;
+	height: 500px;
+	color: #ffffff;
+	/*border: 1px solid #ffffff;*/
+}
+.nom
+{
+	font-size: 65px;
+	font-family: Arial Black,Serif;
+	font-weight: bold;
+	text-align: center;
+
+}
+.politesse
+{
+	margin-bottom: -70px;
+	text-align: center;
+	font-size: 70px;
+	font-family:Adobe Arabic, Viner Hand ITC, Arial Black, Serif;
+}
+.metier
+{
+	margin-top: -65px;
+	text-align: center;
+	font-family:Adobe Arabic, Viner Hand ITC, Arial Black, Serif;
+	font-size: 42px;
+}
+
+.icons
+{
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: -30px;
+	margin-left: -45px;
+
+}
+.fb
+{
+	background-color: #fff;
+	border-radius: 100%;
+}
+
+.fb:hover {
+	 background: #3b5999;
+}
+.tt
+{
+	background-color: #fff;
+	border-radius: 100%;
+	margin-left: 10px;
+}
+.tt:hover {
+  background: #4A9CEC;
+}
+.ln 
+{
+	background-color: #fff;
+	border-radius: 100%;
+	margin-left: 10px;
+}
+.ln:hover {
+  	background: #D6274D;
+}
+.ld{
+	background-color: #fff;
+	margin-left: 10px;
+	border-radius: 100%;
+}
+.ld:hover {
+  	background: #1260A2;
+}
+.gm{
+	background-color: #fff;
+	margin-left: 10px;
+	border-radius: 100%;
+}
+.gm:hover {
+  	background: #CE332A;
+}
+.btn{
+	width: 200px;
+	height: 40px;
+	color: #fff;
+	font-size: 20px;
+	border-color: #1260A2;
+	border-radius: 10px;
+  	background: #1260A2;
+	text-decoration: unset;
+	padding-top:10px;
+	font-family: Arial, Serif;
+
+}
+.button{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+/*Début css A propos*/
+#corps-a-propos
+{
+	display: flex;
+	width: 100%;
+	height: 570px;
+	margin: 150px auto;
+	align-items: center;
+	justify-content: center;
+}
+.position-image
+{
+	width: 400px;
+	height:449px;
+	border-radius: 80px 0px;
+	border: 10px solid  #424; 
+}
+.info-personnelle
+{
+	width: 500px;
+	height:450px;
+	margin-top: -60px;
+	margin-left: 20px;
+}
+.titre-a-propos
+{
+	font-size: 38px;
+	font-family: Arial Black,Serif;
+	color: #7D7D7D;
+}
+.texte-a-propos
+{
+	margin-top: -30px;
+	font-family: Arial,Serif;
+	font-size:17px;
+	color: #9A9D9E;
+}
+
+
+li
+{
+	overflow: hidden;
+}
+.profile-A_propos
+{
+	margin-left: -5px;
+	position:relative;
+	margin:20px 0 30px 0}
+	
+.profile-A_propos .titre1
+{
+	font-family: Arial Black,Serif;
+	font-size: 15px;
+	color:#040404;
+	position:relative;
+	width:120px;
+	display:inline-block;
+	margin-bottom:5px
+
+}
+.profile-A_propos .titre1:after
+{
+
+	position:absolute;
+	content:':';
+	color:#040404;
+	font-size:14px;
+	left:100px
+}
+.detail
+{
+	font-family: Arial,Serif;
+	font-size: 15px;
+	color: #9A9D9E;
+}
+.admin-profile
+{
+	margin-left:-40px;
+}
+
+/*Fin css A propos*/
+
+/*Debut formation-et-experience*/
+.imgformation
+{
+	width: 45px;
+	height: 45px;
+	margin-top: 10px;
+}
+.imgexperience
+{
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+}
+.corps-formation-et-experience
+{
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+
+}
+.en-tete
+{
+	display: flex;
+	color: #7D7D7D;
+	font-family: Arial, Serif;
+}
+.formation
+{
+	width: 500px;
+	height: none;
+}
+.experience
+{
+	width: 500px;
+	height: none;
+	margin-left: 20px;
+}
+h2
+{
+	margin-left: 25px;
+
+}
+.bloc-formation1
+{
+	width: 400px;
+	height: 160px;
+	margin: 10px;
+	color: #7D7D7D;
+	margin-left: 45px;
+	background-color:#EAE6E6;
+	padding-left: 10px;
+	padding-top: 10px;
+	font-size: 13px;
+	font-family: Arial , Serif;
+}
+h4
+{
+	font-family: Arial Black, Serif;
+	font-size: 18px;
+	margin-top: 3px;
+	color: #fff;
+
+}
+.bloc-experience
+{
+	width: 400px;
+	height: 120px;
+	margin: 10px;
+	color: #7D7D7D;
+	margin-left: 45px;
+	background-color:#EAE6E6;
+	padding-left: 10px;
+	font-size: 13px;
+	font-family: Arial, Serif;
+}
+.decor
+{
+	border-left: 2px solid #EAE6E6;
+	width: 550px;
+	height: none;
+	margin-left: 30px;
+}
+.decor-cercle1
+{
+	width: 6px;
+	height: 6px;
+	margin-left: 25px;
+	margin-top: -700px;
+	border:3px solid #048CB9;
+	border-radius: 100%;
+	background-color: #fff;
+}
+.decor-cercle2
+{
+	width: 6px;
+	height: 6px;
+	margin-left: 25px;
+	margin-top: 170px;
+	border:3px solid #048CB9;
+	border-radius: 100%;
+	background-color: #fff;
+}
+.decor-cercle3
+{
+	width: 6px;
+	height: 6px;
+	margin-left: 25px;
+	margin-top: 170px;
+	border:3px solid #048CB9;
+	border-radius: 100%;
+	background-color: #fff;
+}
+.decor-cercle4
+{
+	width: 6px;
+	height: 6px;
+	margin-left: 25px;
+	margin-top: 170px;
+	border:3px solid #048CB9;
+	border-radius: 100%;
+	background-color: #fff;
+}
+
+.decor-cercle
+{
+	width: 6px;
+	height: 6px;
+	margin-left: 25px;
+	margin-top: -120px;
+	border:3px solid #048CB9;
+	border-radius: 100%;
+	background-color: #fff;
+}
+/*Fin formation-et-experience*/
+/*Debut realisation*/
+.titre-realisation
+{
+	display: flex;
+	justify-content: center;
+	color: #7D7D7D;
+	font-family: Arial, Serif;
+}
+.section-realisation
+{
+	width: 100%;
+	height: auto;
+}
+.realisation
+{
+	display: flex;
+	justify-content: center;
+	font-size: 25px;
+	color: #7D7D7D;
+	margin: 100px auto;
+	background-color: #424;
+	width: 350px;
+	height: 100px;
+	text-align: center;
+}
+/*Fin realisation*/
+/*Debut contact*/
+#form
+{
+	display: flex;
+}
+.bloc-prinsipal-contact
+{
+	display: flex;
+	justify-content: center;
+	margin: 80px auto;
+}
+.bloc-info-contact
+{
+	width: 700px;
+	height: 500px;
+	border-radius: 20px;
+	padding: 50px;
+	color: #fff;
+	font-family: Arial, Serif;
+	background-color: rgba(128, 128, 128,0.5);
+}
+.titre-contact
+{
+	font-size: 40px;
+	margin-top: -20px;
+	border-bottom: 2px solid #424;
+}
+.nom-form, .mail, .numero, .message
+{
+	font-size: 25px;
+}
+
+
+#nom, #email, #numero
+{
+	width: 250px;
+	height: 40px;
+	font-size: 20px;
+	border: 1px solid grey;
+	border-radius: 10px;
+}
+
+#margin-form
+{
+	margin-top: 20px;
+}
+.margin-message
+{
+	margin-top: 20px;
+	margin-left: 70px;
+}
+#message
+{
+	border-radius: 10px;
+	width: 350px;
+	height: 240px;
+	font-size: 20px;
+
+}
+#Envoyer
+{
+	position: absolute;
+	margin-top: 350px;
+	margin-left: 200px;
+	width: 200px;
+	height: 50px;
+	color: #424;
+	font-size: 20px;
+	border: 1px solid grey;
+	border: 1px solid grey;
+	font-family: Arial, Serif;
+	border-radius: 10px;
+
+}
+#nom:hover
+{
+	color: #fff;
+	background-color: #424;
+	border: 2px solid #fff;
+	text-align: center;
+}
+#email:hover
+{
+	color: #fff;
+	background-color: #424;
+	border: 2px solid #fff;
+	text-align: center;
+}
+#numero:hover 
+{
+	color: #fff;
+	background-color: #424;
+	border: 2px solid #fff;
+	text-align: center;
+}
+
+#Envoyer:hover {
+	color: #fff;
+	background-color: #424;
+	border: 2px solid #fff;
+
+}
+#message:hover
+{
+	color: #fff;
+	background-color: #424;
+	border: 2px solid #fff;
+	font-family: Arial, Serif;
+}
+footer
+{
+	font-family: Calibri,Serif;
+	width: 100%;
+	height: 80px;
+	background-color: #424;
+}
+/*Fin contact*/
+@media only screen and (max-width: 900px) {
+  nav {
+
+    	background-color: lightblue;
+  }
+
+	  .nom
+	{
+		font-size: 40px;
+		font-family: Arial Black,Serif;
+		font-weight: bold;
+		text-align: center;
+
+	}
+	.politesse
+	{
+		margin-bottom: -10px;
+		margin-top: 150px;
+		text-align: center;
+		font-size: 35px;
+		font-family:Adobe Arabic, Viner Hand ITC, Arial Black, Serif;
+	}
+	.metier
+	{
+		margin-top: 10px;
+		text-align: center;
+		font-family:Adobe Arabic, Viner Hand ITC, Arial Black, Serif;
+		font-size: 30px;
+	}
+
+	#corps-a-propos
+	{
+		display: flex;
+		flex-direction: column;
+		flex-direction: column-reverse;
+		width: 100%;
+		height: 570px;
+		margin: 150px auto;
+		align-items: center;
+		justify-content: center;
+    }
+	.position-image
+	{
+		margin-top: 140px;
+		width: 400px;
+		height:449px;
+		margin-top: 50px;
+		border-radius: 80px 0px;
+		border: 10px solid  lightblue; 
+	}
+	.info-personnelle
+	{
+
+		width: 500px;
+		height:450px;
+		margin-top: 450px;
+		margin-left: 20px;
+	}
+	.corps-formation-et-experience
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 100px;
+
+	}
+	.formation
+	{
+		width: 500px;
+		height: none;
+		margin-top: 100px;
+	}
+	.experience
+	{
+		margin-top: 200px;
+		width: 500px;
+		height: none;
+		margin-left: 20px;
+	}
+
+	#form
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	.margin-message
+	{
+		margin-top: 20px;
+		margin-left: 0px;
+	}
+
+	#Envoyer
+	{
+		position: absolute;
+		margin-top: 600px;
+		margin-left: 70px;
+		width: 200px;
+		height: 50px;
+		color: lightblue;
+		font-size: 20px;
+		border: 1px solid grey;
+		border: 1px solid grey;
+		font-family: Arial, Serif;
+		border-radius: 10px;
+
+	}
+	.bloc-info-contact
+	{
+		margin-top: 200px;
+		width: 600px;
+		height: 680px;
+		border-radius: 20px;
+		padding: 50px;
+		color: #fff;
+		font-family: Arial, Serif;
+		background-color: rgba(128, 128, 128,0.3);
+	}
+	.footer-a-propos
+	{
+		font-family: Calibri,Serif;
+		width: 100%;
+		margin-top: 450px;
+		height: 80px;		
+		background-color: lightblue;
+	}
+	#nom:hover
+{
+	color: #fff;
+	background-color: lightblue;
+	border: 2px solid #fff;
+	text-align: center;
+}
+	#mail:hover
+	{
+		color: #fff;
+		background-color:  lightblue;
+		border: 2px solid #fff;
+		text-align: center;
+	}
+	#numero:hover 
+	{
+		color: #fff;
+		background-color:  lightblue;
+		border: 2px solid #fff;
+		text-align: center;
+	}
+
+	#Envoyer:hover {
+		color: #fff;
+		background-color:  lightblue;
+		border: 2px solid #fff;
+
+	}
+	#message:hover
+	{
+		color: #fff;
+		background-color:  lightblue;
+		border: 2px solid #fff;
+		font-family: Arial, Serif;
+	}
+	.section-realisation
+	{
+		width: 100%;
+		margin-top: 200px;
+		height: auto;
+	}
+
+	footer
+	{
+		font-family: Calibri,Serif;
+		width: 100%;
+		height: 80px;
+		background-color: lightblue;
+	}
+}
+
+

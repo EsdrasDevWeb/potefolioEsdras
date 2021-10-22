@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Mon cv</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<!-- Menu de navigation -->
+		<nav >
+        <div class="titre">
+          <h1>MON CV</h1>
+        </div>
+        <div class="position-menu">
+          
+          <ul>
+            <li class="menu"><h3> MENU</h3>
+              <ul class="sous-menu">
+                <li>
+                        <a href="index.html" class="Accueil">ACCUEIL</a>
+                      </li>
+                      <br>
+                    <li>
+                        <a href="A propos.html" class="A-propos">A PROPOS</a>
+                      </li>
+                      <br>
+                      <li>
+                        <a href="formation-et-experience.html" class="Formations">FORMATION &<br> EXPERIENCE PRO</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="realisation.html" class="Réalisations">MES REALISATIONS</a>
+                        
+                      </li>
+                      <br>
+                    <li>
+                         <a href="contact.html" class="contact">CONTACT</a>
+                    </li>
+              </ul>
+                  </li>   
+              </ul>
+            </div>
+    </nav>
+		<!--Fin Menu de navigation -->
+    
+      <section class="bloc-prinsipal-contact">
+        <div class="bloc-info-contact">
+          <p class="titre-contact">Me contacter</p>
+            <form method="POST" action="" id="form">
+              <div class="info-visiteur">
+                <div id="margin-form">
+                  <label for="nom" class="nom-form"> Votre nom</label><br>
+                  <input type="text" name="nom" id="nom" placeholder="Entre votre nom"><br>
+                  <span id="errornom"></span>
+                </div>
+
+                <div id="margin-form">
+                  <label for="mail" class="mail"> Adresse E-mail</label><br>
+                  <input type="email" name="mail" id="email" placeholder="Entre votre adresse mail"><br>
+                  <span id="erroremail"></span>
+                </div>
+
+                <div id="margin-form">
+                  <label for="numero" class="numero"> Contact</label><br>
+                  <input type="tel" name="numero" id="numero" placeholder="Votre numero de telephone"><br>
+                  <span id="errornumero"></span>
+                </div>
+              </div>
+
+              <div class="message-visiteur">
+                <div class="margin-message">
+                  <label for="message" class="message"> Message</label><br>
+                  <textarea id="message" placeholder="Ecrivez votre message"></textarea>
+                </div>
+              </div>
+              <input type="submit" id="Envoyer" value="Envoyer" >
+          </form>
+
+        </div>
+
+      </section>
+      <br>
+      <br>
+      <br> 
+      <br>
+      <br>      
+	 <footer>
+    
+   </footer>
+   <script>
+      let form = document.getElementById('form');
+
+      form.addEventListener('submit', function(e){
+      let nom = document.getElementById('nom');
+      let reglenom = /[a-zA-Z-\s]+$/;
+      let email = document.getElementById('email');
+      let regleemail = /[a-z@]+$/;
+      let numero = document.getElementById('numero');
+      let reglenumero = /[0-9+]+$/;
+
+         if (nom.value.trim()=='') {
+            let errornom = document.getElementById('errornom');
+            errornom.innerHTML = "Votre Nom et prénoms*";
+            errornom.style.color = 'red';
+            e.preventDefault();
+          } else if (reglenom.test(nom.value)== false) {
+            errornom.innerHTML = "Nom invalide* ";
+            errornom.style.color = 'red';
+            e.preventDefault();
+          }
+          if (email.value.trim()=='') {
+            let erroremail = document.getElementById('erroremail');
+            erroremail.innerHTML = "Veillez entrer un E-mail valide*";
+            erroremail.style.color = 'red';
+            e.preventDefault();
+          } else if (regleemail.test(email.value)== false) {
+            erroremail.innerHTML = "Veillez entrer un E-mail valide*";
+            erroremail.style.color = 'red';
+            e.preventDefault();
+          }
+          if (numero.value.trim()=='') {
+            let errornumero = document.getElementById('errornumero');
+            errornumero.innerHTML = "Veillez entrer votre numero*";
+            errornumero.style.color = 'red';
+            e.preventDefault();
+          } else if (reglenumero.test(numero.value)== false) {
+            errornumero.innerHTML = "Veillez entrer un numero valide*";
+            errornumero.style.color = 'red';
+            e.preventDefault();
+          }
+     })
+   </script>
+</body>
+</html>
